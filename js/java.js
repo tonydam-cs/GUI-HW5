@@ -34,6 +34,14 @@ if (minCol == "" || maxCol == "" || minRow == "" || maxRow == "") {
   document.getElementById("multiTable").innerHTML = rows; //empty table
   return false;
 }
+//checks for digits
+if ( isNaN(minRow) || isNaN(maxRow) || isNaN(minCol) || isNaN(maxCol) ) {
+  error += "(!) Non-Numbers detected! Please reinput with numbers only!";
+  document.getElementById("Updates").innerHTML = error; // prints error message
+  rows = '';
+  document.getElementById("multiTable").innerHTML = rows; //empty table
+  return false;
+}
 
 // checks if user entered a greater max column than min column input
 if (minCol > maxCol)
@@ -43,7 +51,6 @@ if (minCol > maxCol)
   minCol = maxCol; //makes min = to max
   maxCol = +document.getElementById("input1").value; //makes max = to min
 }
-
 // checks if user entered a greater max row than min row input
 if (minRow > maxRow)
 {
