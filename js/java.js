@@ -1,3 +1,21 @@
+/*
+ Name: Tony Dam
+ Email: tony_dam@student.uml.edu
+ Affiliation: Junior Student at UMass Lowell in COMP.4610-201
+              91.61 GUI Programming I
+Date created: 10/26/20
+
+Sources from: W3Schools, Stackoverflow, Youtube,
+and https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+Website was created for personal use. Creates a dynamic interactive
+table for users to generate a multiplication table of any length of
+their choosing.
+Copyright (c) October 26th, 2020 Tony Dam. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to
+author.
+*/
+
 function table() {
 var minCol = +document.getElementById("input1").value;
 var maxCol = +document.getElementById("input2").value;
